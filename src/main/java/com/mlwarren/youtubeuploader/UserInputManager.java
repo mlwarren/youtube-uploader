@@ -1,5 +1,6 @@
 package com.mlwarren.youtubeuploader;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -7,6 +8,10 @@ import java.util.Scanner;
 
 @Component
 public class UserInputManager {
+
+    @Autowired
+    YoutubeUploader youtubeUploader;
+
     private String categoryID;
     private String description;
     private String title;
@@ -22,6 +27,7 @@ public class UserInputManager {
         System.out.println("Enter Description:");
         setDescription(scan.nextLine());
 
+        System.out.println("Current Youtube Categories:" + youtubeUploader.getUserCategories() + "\n");
         System.out.println("Enter CategoryID:");
         setCategoryID(scan.nextLine());
 
@@ -42,12 +48,7 @@ public class UserInputManager {
         String correct = scan.nextLine();
         if(correct.equalsIgnoreCase("y")){
             System.out.println("Ready to upload? (y/N)");
-            if(scan.nextLine().equalsIgnoreCase("y")) {
-                return true;
-            }
-            else{
-                return false;
-            }
+            return scan.nextLine().equalsIgnoreCase("y");
         }
         else{
             return false;
