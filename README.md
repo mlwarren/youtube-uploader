@@ -29,6 +29,8 @@ developer.key
 
 Before running the .jar, these files must be replaced with the appropriate configuration files from Amazon. You can learn more about the client_secret.json and obtaining a developer key [here](https://developers.google.com/youtube/registering_an_application).
 
+
+### Running
 You may run the executable jar file with the following syntax:
 ```
 java -jar youtube-uploader-v1.jar [video path]
