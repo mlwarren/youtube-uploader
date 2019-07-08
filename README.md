@@ -27,7 +27,7 @@ client_secret.json
 developer.key
 ```
 
-Before running the .jar, these files must be replaced with the appropriate configuration files from Amazon. You can learn more about the client_secret.json and obtaining a developer key [here](https://developers.google.com/youtube/registering_an_application).
+Before running the .jar, these files must be replaced with the appropriate configuration files from Google. You can learn more about the client_secret.json and obtaining a developer key [here](https://developers.google.com/youtube/registering_an_application).
 
 
 ### Running
