@@ -1,20 +1,10 @@
 package com.mlwarren.youtubeuploader;
 
-import com.google.api.client.http.InputStreamContent;
-import com.google.api.services.youtube.YouTube;
-import com.google.api.services.youtube.model.Video;
-import com.google.api.services.youtube.model.VideoSnippet;
-import com.google.api.services.youtube.model.VideoStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
-import java.io.*;
-import java.security.GeneralSecurityException;
 
 @SpringBootApplication
 public class Main {
